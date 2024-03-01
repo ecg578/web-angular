@@ -1,0 +1,162 @@
+/* estilos.css */
+.logo {
+    width: 120px;
+    /* Ajusta el ancho según lo desees */
+    height: auto;
+    /* Autoajusta la altura para mantener la proporción */
+}
+
+/* Cambiar el color de fondo del header */
+.header {
+    background-color: #0B262B;
+    /* Cambia el color del fondo del header */
+    color: #cacacaef;
+    /* Cambia el color del texto del footer a blanco */
+    width: 100%;
+}
+
+/* Cambiar el color de fondo del footer y el color del texto del footer a blanco */
+footer {
+    grid-row: 2 / 3; /* Coloca el footer en la segunda fila */
+    /*  ---  */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro del footer se apilen verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos dentro del footer */
+    align-items: center; /* Centra horizontalmente los elementos dentro del footer */
+    background-color: #0B262B;
+    padding: 20px;
+    font-size: 14px;
+    color: #cacacaef;
+    font-family: Arial, sans-serif;    
+}
+
+
+.nav-link active {
+    color: #0B262B
+}
+
+nav ul li a :hover {
+    color: #444;
+    /* Cambia el color a rojo */
+    transition: color 0.5s ease;
+    /* Agrega una transición suave de 0.3 segundos al cambiar el color */
+}
+
+.btn-custom {
+    background-color: #0B262B;
+    /* Color de fondo personalizado */
+    color: #CACACAEF;
+    /* Color del texto (opcional) */
+    border-color: #0B262B;
+    /* Color del borde (opcional) */
+}
+
+/* Cambiar el color del texto cuando el botón se encuentre en estado activo o en hover (opcional) */
+    .btn-custom:hover,
+    .btn-custom:focus {
+        background-color: #444;
+        /* Cambiar el color de fondo en hover o focus */
+        color: #CACACAEF;
+        /* Cambiar el color del texto en hover o focus */
+        border-color: #444;
+        /* Cambiar el color del borde en hover o focus */
+    }
+
+body {
+    color: #0B262B;
+    /* Cambia el color del texto del body según tu preferencia */
+    font-family: Arial, sans-serif;
+    /* Cambia la fuente de texto según tu preferencia */
+    display: grid;
+    grid-template-rows: 1fr auto; /* Una fila para el contenido, otra para el footer */
+    min-height: 200vh;
+    margin: 0;
+}
+
+.page {
+    grid-row: 1 / 2; /* Coloca el contenido en la primera fila */
+}
+
+/* Establece un ancho máximo más pequeño para el carrusel */
+#carouselExampleSlidesOnly {
+    max-width: 400px;
+    /* Ajusta el ancho máximo según tus preferencias */
+    margin: 0 auto;
+    /* Centra el carrusel en la página */
+}
+
+/* Establece un ancho máximo para las imágenes dentro del carrusel */
+.carousel-inner img {
+    max-width: 100%;
+    /* Ajusta el ancho máximo de las imágenes */
+    height: auto;
+    /* Autoajusta la altura para mantener la proporción */
+}
+
+/* Puedes agregar estilos personalizados aquí si es necesario */
+.container-form {
+    padding: 20px;
+    text-align: left;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.container {
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    text-align: center;
+    /* Centra el texto en el contenido */
+}
+
+.column-left {
+    /* Estilos para la columna izquierda si es necesario */
+}
+
+.column-right {
+    /* Estilos para la columna derecha si es necesario */
+}
+
+.container-form {
+    border: 2px solid #ccc;
+    /* Color y ancho del borde */
+    padding: 20px;
+    /* Espacio interno del contenedor */
+    margin-bottom: 40px;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    background-color: #f8f8f8;
+    /* Color de fondo del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra del contenedor */
+}
+
+.card {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    color: #0B262B;
+}
+
+.card-header {
+    background-color: #0B262B;
+    color: #cacacaef;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px 15px 0 0;
+}
+
+.form-control {
+    border-radius: 0 0 15px 15px;
+    box-shadow: none;
+}

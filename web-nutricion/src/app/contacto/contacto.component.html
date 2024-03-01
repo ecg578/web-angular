@@ -1,0 +1,65 @@
+<head>
+    <title>Tu Página Web</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../app.component.css"> <!-- Agrega tu archivo CSS personalizado aquí -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<div class="container">
+    <div style="padding-top: 100px; align-content: center;">
+        <h1>¡Rellena el formulario y te contactaré!</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="container-form form-container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required="">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="telefono">Télefono:</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" required="">
+            </div>
+            <div class="form-group">
+                <label for="plan">Planes:</label>
+                <select class="form-control" id="plan" name="plan">
+                    <option value="">Seleccione un plan</option>
+                    <option value="plan1">Ganar peso</option>
+                    <option value="plan2">Perder peso</option>
+                    <option value="plan3">Estar en forma</option>
+                    <option value="plan4">Preparar unas oposiciones</option>
+                    <option value="plan5">Conocer acerca del powerlifting</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cita">Seleccionar fecha de cita:</label>
+                <input type="date" class="form-control" id="cita" name="cita" required="">
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required=""></textarea>
+            </div>
+            <div style="padding-left: 150px;">
+                <button class="btn btn-primary btn-custom " type="submit" style="color: #cacacaef;"><strong>Enviar</strong></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="container">
+    <h1>También puedes contactarme por WhatsApp</h1>
+    <p><strong>¡Estoy disponible para responder tus preguntas por WhatsApp!</strong></p>
+</div>
+
+<div style="padding-bottom: 50px;">
+    <div class="container">
+        <a href="https://api.whatsapp.com/send?phone=34646031437" target="_blank" class="btn btn-success"><strong>Contactar por WhatsApp</strong></a>
+    </div>
+</div>
